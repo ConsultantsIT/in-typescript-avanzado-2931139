@@ -1,4 +1,5 @@
 import { StringValidator } from './interfaces/Validation';
+import { Calculator } from './utils/calc';
 import { LettersOnlyValidator } from './validators/LettersOnlyValidator';
 import { ZipCodeValidator } from './validators/ZipCodeValidator';
 
@@ -23,3 +24,6 @@ strings.forEach((s) => {
 
 console.log('Hola mundo: Maty');
 
+
+const calc = new Calculator();
+console.log(calc.sum(1,2,3,4,5,6,7,8))
