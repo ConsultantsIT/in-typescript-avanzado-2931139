@@ -1,14 +1,28 @@
-function Logger(message: string) {
-  console.log(`Mensaje: ${message}`);
 
-  return function (target: any) {
+
+function Logger(message: string) {
+  console.log(`Hola ${message}`);
+
+  return function (target: unknown) {
     console.log(`Clase decorada: ${target}`);
     console.log(target);
-  };
+  }
 }
 
+// function Logger(message: string) {
+//   console.log(`Mensaje: ${message}`);
+
+//   return function (target: any) {
+//     console.log(`Clase decorada: ${target}`);
+//     console.log(target);
+//   };
+// }
+
+
+//@Logger('Hola mundo')
+
 /** Calculator with basic operations */
-@Logger('Hola mundo')
+@Logger("Carlos Parra")
 export class Calculator {
   constructor() {
     // console.log('Calculator has been loaded...');
